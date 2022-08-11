@@ -1,0 +1,14 @@
+{
+  "name": "virtual-pet",
+  "version": "1.0.0",
+  "description": "Virtual-pet created by Mark Whitehead for the Manchester Codes June 2022 Cohort",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Mark Whitehead",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^28.1.3"
+  }
+}
