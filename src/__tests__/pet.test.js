@@ -16,17 +16,17 @@ describe("constructor", () => {
   });
 });
 
-describe("growUP", () => {
+describe("growUp", () => {
   it("increments the age by 1", () => {
     const pet = new Pet("Fido");
-    pet.growUP();
+    pet.growUp();
 
     expect(pet.age).toEqual(1);
   });
 
   it("increases the age by 1, decreases fitness by 3, increase fitness by 5", () => {
     const pet = new Pet("Fido");
-    pet.growUP();
+    pet.growUp();
 
     expect(pet.age).toEqual(1);
     expect(pet.fitness).toEqual(7);
@@ -52,5 +52,53 @@ describe("feed", () => {
     pet.feed();
 
     expect(pet.hunger).toEqual(0);
+  });
+});
+
+describe("checkUp", () => {
+  it("returns a string explaining how the pet is feeling", () => {
+    const pet = new Pet("Fido");
+
+    pet.fitness = 3;
+    pet.checkUp();
+
+    expect(pet.checkUp()).toEqual("I need a walk");
+  });
+  it("returns a string explaining how the pet is feeling", () => {
+    const pet = new Pet("Fido");
+
+    pet.hunger = 5;
+    pet.checkUp();
+
+    expect(pet.checkUp()).toEqual("I am hungry");
+  });
+  it("returns a string explaining how the pet is feeling", () => {
+    const pet = new Pet("Fido");
+
+    pet.fitness = 3;
+    pet.hunger = 5;
+    pet.checkUp();
+
+    expect(pet.checkUp()).toEqual("I am hungry AND i need a walk");
+  });
+  it("returns a string explaining how the pet is feeling", () => {
+    const pet = new Pet("Fido");
+
+    pet.fitness = 7;
+    pet.hunger = 2;
+    pet.checkUp();
+
+    expect(pet.checkUp()).toEqual("I feel great");
+  });
+});
+
+describe("checkUp", () => {
+  it("returns a string explaining how the pet is feeling", () => {
+    const pet = new Pet("Fido");
+
+    pet.fitness = 3;
+    pet.checkUp();
+
+    expect(pet.checkUp()).toEqual("I need a walk");
   });
 });
