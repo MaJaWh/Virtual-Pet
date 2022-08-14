@@ -102,3 +102,15 @@ describe("checkUp", () => {
     expect(pet.checkUp()).toEqual("I need a walk");
   });
 });
+
+describe("isAlive", () => {
+  it("is the pet alive", () => {
+    const pet = new Pet("Fido");
+
+    pet.fitness = 0;
+    pet.hunger = 10;
+    pet.age = 30;
+
+    expect(pet.isAlive).toEqual(false);
+  });
+});
