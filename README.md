@@ -1,6 +1,6 @@
 # VIRTUAL PET
 
-### CONTENTS OF THIS FILE
+### Contents of this file
 
 - Introduction
 - Requirements
@@ -10,7 +10,7 @@
 
 ---
 
-### INTRODUCTION
+### Introduction
 
 A totaly virtual pet! Our first virtual pet made using Java Script for week 5 of the Manchester Codes Software Engineering Track. This project was our introduction to the world of Object Oriented Programming.
 
@@ -34,13 +34,13 @@ A message will also appear on the screen if the pet dies
 
 ---
 
-### REQUIREMENTS
+### Requirements
 
 There are no speacial requirements
 
 ---
 
-### RECOMMENDED MODULES
+### Recommended modules
 
 There are no special recommended modules
 
@@ -61,6 +61,6 @@ Please follow the below steps to set up the virtual pet on your own machine
 
 ---
 
-### FUTURE UPDATES
+### Future Updates
 
 I aim to increase the functionality of the pet in the future and create a GUI for a better user experience
