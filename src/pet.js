@@ -15,6 +15,15 @@ function Pet(name) {
   };
 }
 
+// const parent = new Pet("dave") {
+//   adoptChild = funtion() {
+
+//   }
+// };
+// Need a function called adoptChild which creates a new instance of child on the parent.
+
+//haveBabay(childsName )
+
 Pet.prototype = {
   get isAlive() {
     return this.age < 30 && this.hunger < 10 && this.fitness > 0;
